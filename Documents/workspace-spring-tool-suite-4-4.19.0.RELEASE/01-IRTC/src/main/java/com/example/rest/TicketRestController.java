@@ -25,7 +25,7 @@ public class TicketRestController {
 	
 	// this logic Create a ticket
 	
-	@PostMapping("/ticketsS") // The POST HTTP method is used to create a resource 
+	@PostMapping("/tickets") // The POST HTTP method is used to create a resource 
 	public ResponseEntity<Ticket> bookTicket(@RequestBody Passenger p){ //ResponseEntity represents the whole HTTP response: status code, headers, and body
 		                                                               //@RequestBody Annotation indicating a method parameter should be bound to the body of the web request.
 		Ticket ticket = service.bookTicket(p);
